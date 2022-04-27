@@ -60,17 +60,51 @@ The game has five pillars in its core game loop:
 
 ## Game environment
 
+I setting nei quala si svolgono i vari livelli sono oscuri dungeon di pietra o caverne scavate nella roccia, e luoghi all'aperto come cimiteri e foreste ma sempre di notte con poca luce. Si incontrano ostacoli come muri, piattaforme, lapidi e alberi. Gli oggetti che si possono incontrare e raccogliere sono batterie per la torcia, piccoli giochi per diminuire la paura del bimbo, lampadine di veri colori che modificano la luce della torcia, vestiti o copertine speciali che proteggono temporaneamente il bimbo dai mostri, machingegni fotosensibili che attivano o disattivano porte o fanno muovere piattaforme 
+
 ## Camera, control, character (3Cs)
+
+Balancing this 3 componentes makes the game experience more fluid and immersive for the player
 
 ### Camera
 
+L'inquadratura seguirà sempre il bimbo lasciandolo al centro della scena, in una inquadratura classica da platform 2d. La torcia sarà come in un layer superiore e si potrà muovere liberamente su tutto lo schermo. Gran parte della scena sarà nera, e sarà visibilie l'ambiente illuminato intorno al bimbo, ai mostri o ad altri punti di luce. Accendendo la torcia in ogni punto si crea un raggio di luce che illumina parzialmente una zona dello schermo.
+L'inquadratura si muove quasi sempre solo orizzontalmente ma possono esserci anche dei livelli in verticale, quindi potrà muoversi anche verticalmente, sempre lasciando il bimbo più al centro possibile, ma l'inquadratura deve rispettare i liminiti di dimensioni del livello.
+Quando il bimbo viene a contatto con un fantasma l'inquadratura potrebbe vibrare o inclinarsi per far comprendere il pericolo e l'aumento di spavento del bimbo
+
 ### Character
+
+In questo gioco il protagonista si muove in modo semi autonomo mentre il giocatore controlla solo la torcia che si muove come un layer sovrapposto su tutto lo schermo.
 
 #### Character description
 
+Il personaggio principale è un bimbo o una bimba, spaventati che si trovano in ambienti bui e spaventosi.
+Il giocatore all'inizio del gioco può scegliere uno degli avatar proposti, tra bimbo e bimba.
+
+![MaleChild](readme_images/male_child.png?raw=true "Male Child")
+*Image 2 - Male Child*
+![FemaleChild](readme_images/female_child.png?raw=true "Female Child")
+*Image 3 - Female Child*
+
+La torcia elettrica è rossa ed ha un bottone laterale, quando accesa emette un fascio di luce in direzione corretta, che illumina ad una certa distanza quello che la circonda.
+
+![FlashLight](readme_images/torcia.png?raw=true "FlashLight")
+*Image 5 - FlashLight*
+![FlashLightOn](readme_images/torcia-accesa.png?raw=true "FlashLight On")
+*Image 6 - FlashLight On*
+
 #### Character metrics
 
+Gli sprite del bimbo e della torcia sono in pixel art, dimensioni 32x32 pixel.
+La **velocità del bambino** di default è lenta, mentre raccogliendo  alcuni oggetti può aumentare temporaneamente
+Il bimbo ha **un'indicatore di spavento** che decresce a contatto con i mostri/fantasmi e si ripristina con alcuni oggetti o ad inizio livello
+La torcia segue il mouse senza particolari limiti di velocità ma può **inclinarsi** (ruotare il fascio di luce) in base alla posizione sullo schermo
+La torcia ha un **indicatore di carica**, che si consuma velocemente quando accesa, e si ripristina raccogliendo alcuni oggetti.
+In base al **colore della luce**, la torcia ha una **potenza di illuminazione** diversa, che fa scomparire più o meno velocemente i mostri ed i fantasmi, alcune lampadine raccolte rallentano temporaneamente il **consumo di carica** della torcia
+
 #### Character states
+
+
 
 ### Controller
 
