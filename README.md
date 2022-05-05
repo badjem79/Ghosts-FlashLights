@@ -103,10 +103,25 @@ La torcia ha un **indicatore di carica**, che si consuma velocemente quando acce
 In base al **colore della luce**, la torcia ha una **potenza di illuminazione** diversa, che fa scomparire più o meno velocemente i mostri ed i fantasmi, alcune lampadine raccolte rallentano temporaneamente il **consumo di carica** della torcia
 
 #### Character states
+The following section outlines the primary child character states:
+- **Idle**: fermo prima di iniziare il livello di gioco
+- **Walking**: cammina scegliendo il percorso migliore verso la fine del livello
+- **Jumping**: salta su una piattaforma o su un gradino
+- **Scared**: spaventato per il contatto con un fantasma o un mostro
+- **Happy**: raggiunto il fine livello
 
-
+The following section outlines the primary flashlight states:
+- **Disabled**: non può essere mossa
+- **TurnedOff**: spenta
+- **TurnedOn**: accesa
+- **Discharged**: scarica
 
 ### Controller
+The following section outlines the **mouse** controller scheme:
+Muovere il mouse, durante il gioco, significa muovere la torcia sullo schermo, la punta della torcia viene rivolta in automatico verso il fantasma o il mostro piu vicino, quando si tiene premuto il tasto sinistro del mouse la torcia si accende e non si può muovere ne ruoterà in nessun modo, quando è spenta si può muovere liberamente per tutto lo schermo, semplicemente seguendo la posizione del mouse
+
+The following section outlines the **touchscreen** controller scheme:
+La torcia rimane ferma e ruota verso il mostro o il fantasma più vicini, muovendo la torcia con il dito essa si muove, ruotando sempre automaticamente verso i mostri, Sarà presente un tasto in basso a sinistra dello schermo a forma di bottone di accensione della torcia, tenendolo premuto la torcia si accende, e non può essere spostata con il dito, mentre rilasciadolo si potrà spostare e ruoterà di nuovo
 
 ## Game ingredients
 
