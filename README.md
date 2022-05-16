@@ -140,6 +140,24 @@ The following section outlines the core game systems:
 - **Platforms System**: le piattaforme si muovono in automatico o con l'aiuto della luce della torcia
 - **Monsters System**: i mostri hanno un loro comportaento in base al livello e al tipo
 
-## Game menu
+## Game Menu
+In this section, we'll outline the game's menus:
+
+**Main Menu**: The main menu will be accessible at the start of the game. The menu options are as follows:
+- Play: This option loads the levels submenu.
+  - Levels: level list, only the completed levels and the first uncompleted level are unlocked and available to be played
+- Scores: This option displays the latest top 10 scores.
+- Exit: This option closes the game's window.
+
+**In-Game Menu**: The in-game menu is only accessible while playing levels, apearing when "Esc"/"Back" is pressed/tapped. The menu options are as follows:
+Restart Level: Restarts the level from the beginning
+Exit Level: Returns the player back to the main menu scene
 
 ## Game HUD
+The following section outlines the game's **Head-up Display** (HUD):
+The HUD will only be displayed while the game is in a level and will include the following interface components:
+- **Fear Meter**: indica il livello di paura del bimbo
+- **Charge Meter**: indica il livello di carica della batteria della torcia
+- **Power Merter**: indica per ogni mostro e fantasma, il livello di potenza residua
+- **Level Progress Bar**
+- **Countdown**: prima dell'inizio di ogni livello un contatore da 3 a 0 per preparare il giocatore ad iniziare
