@@ -124,8 +124,21 @@ The following section outlines the **touchscreen** controller scheme:
 La torcia rimane ferma e ruota verso il mostro o il fantasma più vicini, muovendo la torcia con il dito essa si muove, ruotando sempre automaticamente verso i mostri, Sarà presente un tasto in basso a sinistra dello schermo a forma di bottone di accensione della torcia, tenendolo premuto la torcia si accende, e non può essere spostata con il dito, mentre rilasciadolo si potrà spostare e ruoterà di nuovo
 
 ## Game ingredients
+The following section outlines the core game ingredients:
+- **Child**: è il personaggio principale del gioco e si muove in automatico cercando di raggiungere la fine del livello evitando i fantasmi ed i mostri più potenti
+- **Fanatasmi/Mostri**: sono gli antagonisti che possono far provare paura al bimbo e paralizzarlo completamente se entrano per troppo tempo a contatto con lui; sono fermi, si muovono lungo percorsi prestabiti o inseguono il bimbo
+- **Flashlinght**: la torcia è lo strumento che usa il giocatore per combattere e sconfiggere i fantasmi ed i mostri sullo schermo, può restare accesa per poco tempo prima di scaricarsi, quindi la sua energia va conservata ed utilizzata il meno possibile
+- **Pickups**: oggetti che il bimbo può raccogliere nel suo percorso e che danno un benefit, come ricaricare la batteria, proteggere il bimbo, velocizzarlo o rallentare i mostri
+- **Obstacles**: altri ostacoli che possono aumentare la paura del bimbo, bloccarlo o farlo cadere, ad esempio delle porte possono aprirsi con un pannello solare, o delle piattaforme si possono muovere con la luce per evitare la caduta del bimbo
+- **Terreno e Piattaforme**: sono la base sulla quale il bimbo cammina, salta e si muove verso la fine del livello, possono muoversi automaticamente o manualmente in orizontale o verticale per permettere di raggiungere zone altrimenti inaccessibili. Se si muovono manualmente, sarà la luce della torcia a controllarle con dei piccoli pannelli solari posti in alcune zone del livello
+- **Fine livello**: un oggetto speciale che conforta il bimbo quando viene raggiunto
 
 ## Game systems
+The following section outlines the core game systems:
+- **Child Movement System**: il bimbo cercherà sempre di restare in movimento e dirigersi verso la fine livello, evitando i mostri più forti, saltando sulle piattaforme e attendendo di poter raggiungere quelle successive
+- **FlashLight System**: la torcia interagisce con i mostri indebolendoli, e con alcuni oggetti per attivarli, ha diversi possibili colori di luce più o meno efficaci con diversi mostri o oggetti
+- **Platforms System**: le piattaforme si muovono in automatico o con l'aiuto della luce della torcia
+- **Monsters System**: i mostri hanno un loro comportaento in base al livello e al tipo
 
 ## Game menu
 
